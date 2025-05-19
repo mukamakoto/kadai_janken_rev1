@@ -1,0 +1,78 @@
+body {
+      /* background-image: url('/img/banpaku.jpg'); */
+      background-size: cover;
+      text-align: center;
+      color:black;
+      font-family: sans-serif;
+      background-repeat: no-repeat;            /* 画像の繰り返しを防ぐ */
+      background-size: cover;                  /* 画面全体に画像を表示 */
+      background-position: center center;      /* 画像を中央に配置 */
+      background-color: #f0f0f0;             /* 画像が表示されない場合の背景色 */
+    }
+    .janken-img {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      transition: border 0.2s;
+    }
+    .janken-img:hover {
+      border: 20px solid #0077FF;
+    }
+    .result {
+      font-size: 30px;
+      margin-top: 30px;
+      font-weight: bold;
+      
+    }
+    .hand-area {
+      margin: 20px 0;
+    }
+
+ #result1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-top: 16px;
+}
+#result1 img {
+  width: 32px;    /* 画像サイズ調整 */
+  height: 32px;
+  margin-left: 8px;
+}
+
+
+/* 既存のスタイルに追加してください */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.popup-content img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.popup-close {
+  margin-top: 15px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}

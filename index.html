@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/style.css">
+       
+    <title>みゃくみゃく</title>
+</head>
+<body background="img/banpaku.jpg">
+  <h1>みゃくみゃく <br>
+    じゃんけんアプリ</h1>
+  <div class="hand-area">
+    <span>あなたの手を選んでください</span><br>
+    <img src="img/gu.jpg" alt="グー" class="janken-img" id="gu">
+    <img src="img/choki.jpg" alt="チョキ" class="janken-img" id="choki">
+    <img src="img/pa.jpg" alt="パー" class="janken-img" id="pa">
+  </div>
+  <div>
+    <span>あなた：</span>
+    <img id="userHand" src="" alt="" style="width:80px;height:80px;">
+    <span>VS</span>
+    <img id="cpuHand" src="" alt="" style="width:80px;height:80px;">
+    <span>：みゃくみゃく</span>
+  </div>
+  <div class="result" id="result"></div>
+  <div id="result1"></div>
+
+  <!-- ポップアップ用の要素
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-content">
+    <img id="popupImage" src="/lose.png" alt="結果画像">
+    <div id="popupMessage"></div>
+    <button class="popup-close" id="popupClose">閉じる</button>
+  </div>
+</div> -->
+
+  <script src="js/janken.js"></script>
+</body>
+</html>
